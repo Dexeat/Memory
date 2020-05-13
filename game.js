@@ -21,7 +21,7 @@ var config = {
 var game = new Phaser.Game(config);
 
 function init() {
-    var bat;
+    var cartedos;
 }
 
 function preload(){
@@ -30,6 +30,17 @@ function preload(){
 
 function create(){
     fond = this.add.image(300,400,'bg')//.setOrigin(0);
+    cartedos = this.physics.add.staticGroup();
 }
 
-function update(){}
+function update(){
+    for(let index = 0;index<4;index++){
+        for(let index2 = 0; index2 < 4; index2++) {
+            var cartedos = cartedos.create(100*index,100*index2,'cartedos')
+        }
+
+    }
+
+
+
+}
