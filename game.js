@@ -38,6 +38,18 @@ function preload(){
 
 function create(){
     fond = this.add.image(300,400,'bg')//.setOrigin(0);
+    fond = this.add.image(0,0,'carteP1').setOrigin(0);
+    fond = this.add.image(0,200,'carteC2').setOrigin(0);
+    fond = this.add.image(0,400,'carteP3').setOrigin(0);
+    fond = this.add.image(0,600,'carteC1').setOrigin(0);
+    fond = this.add.image(150,0,'carteC3').setOrigin(0);
+    fond = this.add.image(150,200,'carteP2').setOrigin(0);
+    fond = this.add.image(150,400,'carteC1').setOrigin(0);
+    fond = this.add.image(150,600,'carteP1').setOrigin(0); 
+    fond = this.add.image(300,0,'carteC2').setOrigin(0);
+    fond = this.add.image(300,200,'carteP3').setOrigin(0);
+    fond = this.add.image(300,400,'carteC3').setOrigin(0);
+    fond = this.add.image(300,600,'carteP2').setOrigin(0);
 }
 
 
