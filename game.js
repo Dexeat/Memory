@@ -22,6 +22,7 @@ var game = new Phaser.Game(config);
 var gcarte = true
 
 function init() {
+    var carte;
 }
 
 function preload(){
@@ -38,18 +39,32 @@ function preload(){
 
 function create(){
     fond = this.add.image(300,400,'bg')//.setOrigin(0);
-    fond = this.add.image(0,0,'carteP1').setOrigin(0);
-    fond = this.add.image(0,200,'carteC2').setOrigin(0);
-    fond = this.add.image(0,400,'carteP3').setOrigin(0);
-    fond = this.add.image(0,600,'carteC1').setOrigin(0);
-    fond = this.add.image(150,0,'carteC3').setOrigin(0);
-    fond = this.add.image(150,200,'carteP2').setOrigin(0);
-    fond = this.add.image(150,400,'carteC1').setOrigin(0);
-    fond = this.add.image(150,600,'carteP1').setOrigin(0); 
-    fond = this.add.image(300,0,'carteC2').setOrigin(0);
-    fond = this.add.image(300,200,'carteP3').setOrigin(0);
-    fond = this.add.image(300,400,'carteC3').setOrigin(0);
-    fond = this.add.image(300,600,'carteP2').setOrigin(0);
+    carte2 = this.add.image(0,0,'carteP1').setOrigin(0);
+    carte3 = this.add.image(0,200,'carteC2').setOrigin(0);
+    carte4 = this.add.image(0,400,'carteP3').setOrigin(0);
+    carte5 = this.add.image(0,600,'carteC1').setOrigin(0);
+    carte6 = this.add.image(150,0,'carteC3').setOrigin(0);
+    carte7 = this.add.image(150,200,'carteP2').setOrigin(0);
+    carte8 = this.add.image(150,400,'carteC1').setOrigin(0);
+    carte9 = this.add.image(150,600,'carteP1').setOrigin(0); 
+    carte10 = this.add.image(300,0,'carteC2').setOrigin(0);
+    carte11 = this.add.image(300,200,'carteP3').setOrigin(0);
+    carte12 = this.add.image(300,400,'carteC3').setOrigin(0);
+    carte1 = this.add.image(300,600,'carteP2').setOrigin(0);
+
+
+    carte2.visible = false;
+    carte3.visible = false;
+    carte4.visible = false;
+    carte5.visible = false;
+    carte6.visible = false;
+    carte7.visible = false;
+    carte8.visible = false;
+    carte9.visible = false;
+    carte10.visible = false;
+    carte11.visible = false;
+    carte12.visible = false;
+    carte1.visible = false;
 }
 
 
