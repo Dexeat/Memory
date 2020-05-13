@@ -16,3 +16,9 @@ var config = {
         update: update
     },
 };
+
+function preload(){}
+
+function create(){}
+
+function update(){}
