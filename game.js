@@ -26,6 +26,13 @@ function init() {
 
 function preload(){
     this.load.image('bg','Assets/background.jpg')
+    this.load.image('cartedos','Assets/PNG/Cards/cardBack_blue3.png')
+    this.load.image('cartedos','Assets/PNG/Cards/cardSpadesA.png')
+    this.load.image('cartedos','Assets/PNG/Cards/cardHeartsA.png')
+    this.load.image('cartedos','Assets/PNG/Cards/cardSpadesK.png')
+    this.load.image('cartedos','Assets/PNG/Cards/cardSpadesQ.png')
+    this.load.image('cartedos','Assets/PNG/Cards/cardHeartsK.png')
+    this.load.image('cartedos','Assets/PNG/Cards/cardHeartsQ.png')
 }
 
 function create(){
