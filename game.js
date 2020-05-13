@@ -19,6 +19,7 @@ var config = {
 }
 
 var game = new Phaser.Game(config);
+var gcarte = true
 
 function init() {
 }
@@ -37,17 +38,18 @@ function preload(){
 
 function create(){
     fond = this.add.image(300,400,'bg')//.setOrigin(0);
-    
 }
 
+
 function update(){
-    for(let index = 0;index<4;index++){
-        for(let index2 = 0; index2 < 3; index2++) {
-            carte.create(150*index,200*index2,'cartedos').setOrigin(0).refreshBody()
+    if(gcarte){
+        for (let index = 0; index < 4; index++) {
+            for (let index2 = 0; index2 < 3; index2++) {
+                carte.create(150 * index, 200 * index2, 'cartedos').setOrigin(0).refreshBody()
+                //console.log('test');
+            }
         }
-
+        gcarte = false
     }
-
-
-
+    
 }
